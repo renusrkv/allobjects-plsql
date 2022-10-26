@@ -1,0 +1,28 @@
+eMail Subject: [Field 1] Notification of Contract Request/Approval -  between [Field 2] and [Field 3] 
+
+Please note that your review/approval is required on a Contract request No. [Field 1], please refer to the following information:
+•	Contract Reference [Field 4] 
+•	Contract Amount: [Field 5]
+•	Contract Category: [Field 6], [Field7] or [Field 8],    depending on selection (Revenue/Cost/Non-Commercial)
+•	Contract period [Field 9]
+•	Contract Type: [Field 10] (New, Amendment, Addendum …)
+
+
+Field 1: ERM reference/ID
+Field 2: Business Unit Name 
+Field 3: Counter Party Name
+
+
+Contracts Coordinator shall have  fields to generate contract reference, this contract reference shall be searchable for and shall be in fields – field for each section in the reference.
+
+Sample: each backslash = a field
+A/B/C/D/E/F
+A: TP, eFM, OMB, ECS, EDCH, eIS, EA or ESH [selection]
+B: R, C or NC [selection]
+C: Counter Party [type - free]
+D: PA, LOI, LOA, MOU, NDA, COC, UL, free [selection + type]
+E: [type-free]
+F: [type-free]  or left blank
+
+Sample:
+eFM/R/PAN/PA/2022-01/AMD1
