@@ -26,3 +26,27 @@ F: [type-free]  or left blank
 
 Sample:
 eFM/R/PAN/PA/2022-01/AMD1
+                SELECT SUM (
+                           ROUND (
+                               (  ((DBMS_LOB.getlength (file_data)) / 1024)
+                                / 1024)))
+                           size_mb
+                  INTO vFileSize
+                  FROM fnd_attached_documents      fad,
+                       fnd_documents               fd,
+                       fnd_lobs                    fl,
+                       fnd_document_datatypes      fdd,
+                       fnd_document_categories_tl  fdct
+                 WHERE     fad.document_id = fd.document_id
+                       AND fd.media_id = fl.file_id
+                       AND fd.datatype_id = fdd.datatype_id
+                       AND fd.category_id = fdct.category_id
+                       AND fad.entity_name = 'LOTC_SUPPONBORD'
+                       AND fad.pk1_value = vPrimaryKey;
+
+   Wf_Engine.setitemattrdocument (
+                    vItemType,
+                    pItemKey,
+                    'EXCEL_ATTACHEMENT',
+                       'FND:entity=LOTC_SUPPONBORD&pk1name=LOTC_SUPPONBORD&pk1value='
+                    || vPrimaryKey);
