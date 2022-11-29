@@ -16,3 +16,5 @@ ES               ETISALAT SERVICE HOLDING LLC                    nkhajeh@etisa
 TP               Tamdeed Projects LLC                            
 OM               OMB Labors Supply LLC                           jfederico@etisalat.ae; afzahmed@etisalat.ae
 EC               EBTIKAR CARD MANUFACTURING                      bmanithottathil@eand.com
+
+christopher.thangaraj@aspiresys.com
