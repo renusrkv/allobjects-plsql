@@ -1,15 +1,18 @@
-select rh.segment1 REQ_NUM, rh.org_id, rl.requisition_line_id,
-rl.requisition_header_id, ph.segment1 RFQ_NUM, ph.org_id,
-pl.po_header_id, pl.po_line_id,
-to_char(pl.creation_date, 'DD-Mon-RRRR HH24:MI:SS') cre_date,
-ph.type_lookup_code, ph.from_type_lookup_code
-from apps.po_requisition_headers_all rh,apps.po_requisition_lines_all rl,
-apps. po_headers_all ph,apps.po_lines_all pl
-where rh.requisition_header_id = rl.requisition_header_id
-  and rl.last_update_date =pl.creation_date
-  and pl.po_header_id = ph.po_header_id
-  and rl.on_rfq_flag = 'Y'
-  AND rh.segment1 = 'xxxxx '
-  and rh.org_id = 'xxxxx'
--- and ph.segment1 = '&RFQ_NUM'
-order by requisition_line_id desc
+Employee ID      Description                                     EMAIL id
+EA10002          T K M RAFI                                      trafi@eand.com
+ES10052          Nelson Castro                                   ncastro@eand.com
+ES10062          Zacariya CV                                     zvayantevalappil@eand.com
+ES10069          RAVI KANTH MUNINDER NARAYAN KANT                kkanth@eand.com
+ES10084          AKHTAR KHAN                                     akhtakhan@eand.com
+FM15476          Shajahan  Namboorimadathil                      snamboorimadathil@eand.com
+TP10541          Venkataraman Swaminathan                        vthalainaya@eand.com
+                                                                 
+OU               Full Name                                       
+FM               Etisalat Facility Management Company            
+EA               ETISALAT ACADEMY                                nhedayah@etisalat.ae ; vtacloban@eand.com
+ED               Emirates Data Clearing House LLC                
+EI               ETISALAT INFORMATION SERVICES                   idhalei@etisalat.ae ; mesaleh@eand.com
+ES               ETISALAT SERVICE HOLDING LLC                    nkhajeh@etisalat.ae
+TP               Tamdeed Projects LLC                            
+OM               OMB Labors Supply LLC                           jfederico@etisalat.ae; afzahmed@etisalat.ae
+EC               EBTIKAR CARD MANUFACTURING                      bmanithottathil@eand.com
