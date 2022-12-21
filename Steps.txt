@@ -1,0 +1,30 @@
+Application Stop Steps:
+1.	Login to AU10123 with user id appldev and password test12345678
+
+2.	Run command adstpappl.sh apps/apps, as shown below:
+WebLogic server password is welcome1
+
+ 
+
+You need to wait until status of script Exit with 0, expected time is 5-10 mins.
+Database Stop Steps:
+3.	Login to AU10123 with user id oradev  and password test12345678
+
+4.	Run command sqlplus / as sysdba, once you connect to SQL prompt, need to run shu immediate; command as shown below. It will take couple of mins.
+
+ 
+
+Database Start Steps:
+5.	Login to AU10123 with user id oradev  and password test12345678
+
+6.	Run command sqlplus / as sysdba, once you connect to SQL prompt, need to run startup; command as shown below. It will take couple of mins.
+
+ 
+Application Start Steps:
+1.	Login to AU10123 with user id appldev and password test12345678
+
+2.	Run command adstrtal.sh apps/apps, as shown below:
+WebLogic server password is welcome1
+ 
+It will take 10-15 mins
+
